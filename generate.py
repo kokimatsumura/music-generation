@@ -111,7 +111,7 @@ def create_midi(prediction_output):
 
         offset += prediction_durations[i]
     midi_stream = stream.Stream(output_notes)
-    midi_stream.write('midi', fp='experiment/song.mid')
+    midi_stream.write('midi', fp='experiment/created_song.mid')
 
 
 with open('experiment/combined_notes', 'rb') as filepath:
